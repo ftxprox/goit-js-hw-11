@@ -1,9 +1,10 @@
+// main.js
 import { addLoader, clearGallery, hideLoading, renderGallery, showInfo } from './js/render-functions.js';
 import { getGallery } from './js/pixabay-api.js';
 import iziToast from "izitoast";
 import "izitoast/dist/css/iziToast.min.css";
-import SimpleLightbox from "simplelightbox";
-import "simplelightbox/dist/simple-lightbox.min.css";
+import SimpleLightbox from 'simplelightbox';
+import 'simplelightbox/dist/simple-lightbox.min.css';
 
 const form = document.querySelector('.search-form');
 const input = document.querySelector('[name="searchQuery"]');
