@@ -38,7 +38,7 @@ export function renderGallery(images) {
   if (lightbox) {
     lightbox.refresh();
   } else {
-    lightbox = new SimpleLightbox('.gallery a', {
+    lightbox = new SimpleLightbox('.gallery', {
       captionsData: 'alt',
       captionDelay: 250,
       captionPosition: 'bottom',
