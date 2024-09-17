@@ -3,20 +3,15 @@
 }
 
 .gallery {
+    justify-content: center;
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
     gap: 24px;
-    list-style-type: none;
-}
-
-.gallery-link {
-    flex-basis: calc((100% - 48px) / 3);
-    transition: transform 250ms ease-in-out;
+    margin-bottom: 36px;
 }
 
 .gallery-link :hover {
-    transform: scale(1.03)
+    transform: scale(1.04)
 }
 
 .img-gallery {
@@ -37,7 +32,7 @@
     align-items: center;
 }
 
-.text-content {
+.content {
     font-size: 12px;
     font-weight: 400;
     text-align: center;
