@@ -26,10 +26,10 @@ export function renderGallery(images) {
           alt="${image.tags}" 
           loading="lazy" />
         <ul class="list-wrapper">
-          <li class="content"><b>Likes:</b> ${image.likes}</li>
-          <li class="content"><b>Views:</b> ${image.views}</li>
-          <li class="content"><b>Comments:</b> ${image.comments}</li>
-          <li class="content"><b>Downloads:</b> ${image.downloads}</li>
+          <li class="text-content"><b>Likes:</b> ${image.likes}</li>
+          <li class="text-content"><b>Views:</b> ${image.views}</li>
+          <li class="text-content"><b>Comments:</b> ${image.comments}</li>
+          <li class="text-content"><b>Downloads:</b> ${image.downloads}</li>
         </ul>
       </a>
   `).join('');
@@ -38,7 +38,7 @@ export function renderGallery(images) {
   if (lightbox) {
     lightbox.refresh();
   } else {
-    lightbox = new SimpleLightbox('.gallery', {
+    lightbox = new SimpleLightbox('.gallery a', {
       captionsData: 'alt',
       captionDelay: 250,
       captionPosition: 'bottom',
