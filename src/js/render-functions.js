@@ -25,12 +25,14 @@ export function renderGallery(images) {
           src="${image.webformatURL}"
           alt="${image.tags}" 
           loading="lazy" />
+
         <ul class="list-wrapper">
           <li class="text-content"><b>Likes:</b> ${image.likes}</li>
           <li class="text-content"><b>Views:</b> ${image.views}</li>
           <li class="text-content"><b>Comments:</b> ${image.comments}</li>
           <li class="text-content"><b>Downloads:</b> ${image.downloads}</li>
         </ul>
+        
       </a>
   `).join('');
   galleryContainer.innerHTML = markup;

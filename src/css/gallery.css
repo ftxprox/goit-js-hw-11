@@ -14,10 +14,6 @@
     transform: scale(1.04)
 }
 
-.gallery-link {
-    flex-basis: calc((100% - 48px) / 3);
-    transition: transform 250ms ease-in-out;
-}
 .img-gallery {
     width: 360px;
     height: 200px;
@@ -25,8 +21,12 @@
     border: 1px solid #808080;
 }
 
+.gallery-link{
+    width: 360px;
+}
+
 .list-wrapper {
-    padding: 5px 20px;
+    padding-left: 4px;
     width: 360px;
     display: flex;
     gap: 28px;
@@ -42,6 +42,9 @@
     text-align: center;
 }
 
+.text-content {
+    width: 100%;
+}
 
 .loader {
     width: 48px;
